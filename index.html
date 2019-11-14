@@ -30,7 +30,7 @@
 
             function  lazyLoad() {
                 var windowHeight = window.innerHeight;
-                var scrollTop = document.body.scrollTop;
+                var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
                 for(var i=0;i<imgList.length;i++){
                     var obj = imgList[i];
                     if(!obj.src){
